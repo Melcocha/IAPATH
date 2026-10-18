@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — AI Path Academy</title>
+<meta name="description" content="Hablemos sobre tu próximo paso en Inteligencia Artificial. Contacta a AI Path Academy.">
+<link rel="icon" type="image/png" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-tinta navbar-aipath sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo-mono-negativo.png" alt="AI Path Academy">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog/index.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-nav-cotizar" href="cotizaciones.html"><i class="bi bi-calculator"></i><span>Cotizar</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="py-5 bg-tinta text-white">
+    <div class="container text-center py-4">
+      <p class="section-eyebrow text-cian-path mb-2">Contacto</p>
+      <h1 class="display-6 fw-bold">Hablemos sobre tu próximo paso en Inteligencia Artificial</h1>
+      <p class="hero-lead mx-auto mt-3">¿Quieres desarrollar nuevas habilidades, capacitar a tu equipo o descubrir cómo la Inteligencia Artificial puede mejorar los procesos de tu empresa? En AI Path Academy podemos orientarte para encontrar la ruta de aprendizaje o solución que mejor se adapte a tus objetivos.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- INFO -->
+        <div class="col-lg-4">
+          <h2 class="h5 mb-3">Información de contacto</h2>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex gap-3 mb-3"><i class="bi bi-mortarboard text-azul-path fs-5"></i><span>AI Path Academy</span></li>
+            <li class="d-flex gap-3 mb-3"><i class="bi bi-geo-alt text-azul-path fs-5"></i><span>San Salvador, El Salvador</span></li>
+            <li class="d-flex gap-3 mb-3"><i class="bi bi-envelope text-azul-path fs-5"></i><span>contacto@aipathacademy.com</span></li>
+            <li class="d-flex gap-3 mb-3"><i class="bi bi-whatsapp text-azul-path fs-5"></i><span>+503 XXXX-XXXX</span></li>
+          </ul>
+
+          <h2 class="h5 mb-3">¿Qué necesitas?</h2>
+          <p class="text-secondary">Puedes contactarnos para:</p>
+          <ul class="list-unstyled">
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-cian-path"></i><span class="text-secondary">Consultar sobre cursos y rutas de aprendizaje.</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-cian-path"></i><span class="text-secondary">Conocer nuestras certificaciones.</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-cian-path"></i><span class="text-secondary">Solicitar información sobre talleres prácticos.</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-cian-path"></i><span class="text-secondary">Solicitar capacitación corporativa.</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-cian-path"></i><span class="text-secondary">Solicitar una asesoría sobre automatización e Inteligencia Artificial.</span></li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-cian-path"></i><span class="text-secondary">Conocer nuestros próximos webinars y actividades educativas.</span></li>
+          </ul>
+        </div>
+
+        <!-- FORM -->
+        <div class="col-lg-8">
+          <div class="p-4 p-lg-5 bg-soft rounded-4">
+            <h2 class="h5 mb-4">Formulario de contacto</h2>
+
+            <div id="formAlert" class="alert alert-success d-none" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i>Tu consulta fue enviada. Te responderemos pronto.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                  <div class="invalid-feedback">Por favor escribe tu nombre.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="correo" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo" required>
+                  <div class="invalid-feedback">Por favor escribe un correo válido.</div>
+                </div>
+                <div class="col-12">
+                  <label for="tipoConsulta" class="form-label">Tipo de consulta</label>
+                  <select class="form-select" id="tipoConsulta" required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option>Cursos y programas</option>
+                    <option>Certificaciones</option>
+                    <option>Talleres</option>
+                    <option>Capacitación empresarial</option>
+                    <option>Consultoría</option>
+                    <option>Información general</option>
+                  </select>
+                  <div class="invalid-feedback">Selecciona el tipo de consulta.</div>
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Cuéntanos qué necesitas" required></textarea>
+                  <div class="invalid-feedback">Cuéntanos qué necesitas.</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-azul-path btn-lg px-4">Enviar consulta</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+(function () {
+  const form = document.getElementById('contactForm');
+  const alertBox = document.getElementById('formAlert');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+    // Front-end únicamente: este Sprint no incluye backend de envío real.
+    alertBox.classList.remove('d-none');
+    form.reset();
+    form.classList.remove('was-validated');
+    alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+})();
+</script>
+<footer class="footer-aipath pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-12 mb-3">
+          <img src="img/logo-mono-negativo.png" alt="AI Path Academy" style="height:34px;" class="mb-3">
+          <p class="mb-1">Domina la tecnología. Lidera el futuro.</p>
+          <p class="small mb-0" style="color:#7A8090;">Academia especializada en Inteligencia Artificial, Machine Learning y Automatización de Procesos.</p>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Navegación</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Inicio</a></li>
+            <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
+            <li class="mb-2"><a href="portafolio.html">Programas</a></li>
+            <li class="mb-2"><a href="faq.html">Certificaciones</a></li>
+            <li class="mb-2"><a href="portafolio.html#talleres">Talleres</a></li>
+            <li class="mb-2"><a href="portafolio.html#consultoria">Consultoría</a></li>
+            <li class="mb-2"><a href="blog/index.html">Recursos</a></li>
+            <li class="mb-2"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Formación</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="portafolio.html#niveles">Nivel Principiante</a></li>
+            <li class="mb-2"><a href="portafolio.html#niveles">Nivel Intermedio</a></li>
+            <li class="mb-2"><a href="portafolio.html#niveles">Nivel Avanzado</a></li>
+            <li class="mb-2"><a href="portafolio.html#niveles">Cursos</a></li>
+            <li class="mb-2"><a href="faq.html">Certificaciones</a></li>
+            <li class="mb-2"><a href="portafolio.html#talleres">Talleres prácticos</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Empresa</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="portafolio.html#consultoria">Capacitación corporativa</a></li>
+            <li class="mb-2"><a href="portafolio.html#consultoria">Consultoría en IA</a></li>
+            <li class="mb-2"><a href="portafolio.html#consultoria">Automatización de procesos</a></li>
+            <li class="mb-2"><a href="portafolio.html#niveles">Asistentes virtuales</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Síguenos</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+            <li class="mb-2"><a href="#"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+            <li class="mb-2"><a href="#"><i class="bi bi-linkedin me-2"></i>LinkedIn</a></li>
+            <li class="mb-2"><a href="#"><i class="bi bi-youtube me-2"></i>YouTube</a></li>
+          </ul>
+          <h6 class="mt-4">Contacto</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>San Salvador, El Salvador</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i>contacto@aipathacademy.com</li>
+            <li class="mb-2"><i class="bi bi-telephone me-2"></i>+503 XXXX-XXXX</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center pt-4 mt-4">
+        <p class="mb-1">AI Path Academy &copy; 2026. Todos los derechos reservados.</p>
+        <p class="mb-0">Inteligencia Artificial aplicada al aprendizaje, al trabajo y a las empresas.</p>
+      </div>
+    </div>
+  </footer><script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
